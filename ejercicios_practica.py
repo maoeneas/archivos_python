@@ -142,13 +142,13 @@ def ej4():
     lineas.pop(0)
     for l in lineas:
         linea=l.split(",")
-        if (linea[9])==2:
+        if (linea[9])=="2":
             ambientes_2 +=1 
             print("la cantidad de deptos de 2 ambientes es de: ",ambientes_2 )
-        elif (linea[9])==3:
+        elif (linea[9])=="3":
             ambientes_3 +=1
             print("la cantidad de deptos de 3 ambientes es de: ",ambientes_3 )
-        # no me arroja el resultado!!!! fuck...
+        # # no me arroja el resultado!!!! fuck...
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
