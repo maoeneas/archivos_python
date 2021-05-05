@@ -135,19 +135,22 @@ def ej4():
     '''
     ambientes_2=0
     ambientes_3=0
-
-    archivo = 'propiedades.csv'
+    # archivo = 'propiedades.csv'
     with open('propiedades.csv') as archivo:
         lineas=archivo.read().splitlines()
     lineas.pop(0)
     for l in lineas:
         linea=l.split(",")
-        if (linea[9])=="2":
+        if (linea[-1])=="2":
             ambientes_2 +=1 
-            print("la cantidad de deptos de 2 ambientes es de: ",ambientes_2 )
-        elif (linea[9])=="3":
+            
+        elif (linea[-1])=="3":
             ambientes_3 +=1
-            print("la cantidad de deptos de 3 ambientes es de: ",ambientes_3 )
+            
+    
+    print("la cantidad de deptos de 2 ambientes es de: ",ambientes_2 )
+    print("la cantidad de deptos de 3 ambientes es de: ",ambientes_3 )
+
         # # no me arroja el resultado!!!! fuck...
 
 if __name__ == '__main__':
